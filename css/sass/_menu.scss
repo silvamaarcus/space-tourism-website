@@ -1,0 +1,76 @@
+header {
+  margin-top: 32px;
+  padding-left: 55px;
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+
+  height: 96px;
+  width: 830px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 400px;
+    height: 1px;
+
+    left: -380px;
+
+    opacity: 0.2515;
+    background: #fff;
+  }
+}
+
+.menu {
+  list-style: none;
+
+  li {
+    margin-left: 48px;
+  }
+}
+
+@include responsive(m) {
+  header {
+    margin-top: 0;
+  }
+
+  .bg-glass {
+    justify-content: center;
+    margin-left: 48px;
+    padding-right: 48px;
+    &::after {
+      display: none;
+    }
+  }
+
+  .menu {
+    li {
+      b {
+        display: none;
+      }
+    }
+  }
+}
+
+@include responsive(s) {
+  header {
+    margin-top: 24px;
+  }
+
+  .bg-glass {
+    display: none;
+  }
+
+  .menu {
+    li {
+      b {
+        display: none;
+      }
+    }
+  }
+}

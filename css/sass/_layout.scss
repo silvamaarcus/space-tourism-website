@@ -2,14 +2,13 @@
 
 // Tamanho do Container para dispositivos.
 $container-xl: 1440px;
-$container-l: 1110px;
+$container-l: 1216px;
 $container-m: 960px;
-$container-s: 686px;
+$container-s: 620px;
 $container-xs: 340px;
 
 // Espaçamento padrão entre colunas.
-$gutter-l: 30px; // Large
-$gutter-s: 10px; // Small
+$gutter: 32px;
 
 // Mixin - Definindo responsividade através de funções, de forma automática.
 
@@ -60,14 +59,14 @@ $gutter-s: 10px; // Small
 // Looping da função p/ determinar tamanho do grid e responsividade.
 @for $i from 1 through 12 {
   .grid-#{$i} {
-    width: calc(#{grid($i)} - #{$gutter-l});
-    margin: $gutter-l / 2;
+    width: calc(#{grid($i)} - #{$gutter});
+    margin: $gutter / 2;
 
     padding: 16px 0px;
     float: left;
 
     @include responsive(s) {
-      width: calc(100% - #{$gutter-s});
+      width: calc(100% - #{$gutter});
       float: none;
     }
   }
@@ -75,8 +74,8 @@ $gutter-s: 10px; // Small
 // Looping da função p/ determinar apenas o tamnho do grid, sem "quebrar" a página.
 @for $i from 1 through 12 {
   .grid-nobreak-#{$i} {
-    width: calc(#{grid($i)} - #{$gutter-l});
-    margin: $gutter-l / 2;
+    width: calc(#{grid($i)} - #{$gutter});
+    margin: $gutter / 2;
 
     padding: 16px 0px;
     float: left;
@@ -297,12 +296,17 @@ $gutter-s: 10px; // Small
 }
 
 .bg-space {
-  background-image: url("../../img/background-home-desktop.jpg");
+  background-image: url("../../img/background-home-desktop.jpg");  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 // Tamanhos para logos
 .logo {
-  max-width: 64px;
+  max-width: 48px;
   min-width: 48px;
 }
 
