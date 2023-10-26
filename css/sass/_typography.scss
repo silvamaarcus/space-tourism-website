@@ -10,8 +10,8 @@
 @mixin typeface-1($size, $device: desktop) {
   @if $size == h0 and $device == desktop {
     font-family: "Bellefair", serif;
-    font-size: 120px;
-    line-height: 120%;
+    font-size: 150px;
+    line-height: 100%;
     font-weight: 500;
   } @else if $size == h0 and $device == mobile {
     font-family: "Bellefair", serif;
@@ -24,6 +24,7 @@
     line-height: 120%;
     font-weight: 500;
   }
+
   @if $size == h1 and $device == desktop {
     font-family: "Bellefair", serif;
     font-size: 80px;
@@ -86,7 +87,7 @@
     font-weight: 300;
   } @else if $size == h5 and $device == desktop {
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 140%;
     font-weight: 300;
   } @else if $size == h5 and $device == mobile {
@@ -153,6 +154,16 @@
     font-size: 13px;
     line-height: 20px;
     font-weight: 200;
+  }
+}
+
+.h0 {
+  @include typeface-1(h0, desktop);
+  @include responsive(s) {
+    @include typeface-1(h0, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h0, smallmobile);
   }
 }
 
