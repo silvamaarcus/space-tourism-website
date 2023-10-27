@@ -5,11 +5,11 @@ const bx = document.querySelector(".bx");
 const menu_mobile = document.querySelector(".menu-mobile");
 const link_mobile = document.querySelectorAll(".link-menu-mobile");
 
-// criando evento de clique ao menu hamburguer  
+// criando evento de clique ao menu hamburguer
 bx.addEventListener("click", () => {
   // ao clicar no menu, ativa classe 'active' a classe 'bx', se estiver ativa, será desativada.
   bx.classList.toggle("active");
-   // ao clicar no menu, ativa classe 'showmenu' a classe 'menu-mobile', se estiver ativa, será desativada.
+  // ao clicar no menu, ativa classe 'showmenu' a classe 'menu-mobile', se estiver ativa, será desativada.
   menu_mobile.classList.toggle("showmenu");
 });
 
@@ -20,3 +20,19 @@ link_mobile.forEach((item) => {
     bx.classList.toggle("active");
   });
 });
+
+// Trocando opções de destino no Destination
+
+// Função para mostrar o conteúdo desejado
+function showContent(id) {
+  let travel_content = document.querySelectorAll(".travel");
+
+  travel_content.forEach((content) => {
+    content.style.display = "none";
+  });
+  document.getElementById(id).style.display = "block";
+}
+
+
+
+showContent("moon");

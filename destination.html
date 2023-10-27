@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="css/style-dest.css">
+    <link rel="icon" type="image/png" href="svg/favicon-32x32.png">
+</head>
+
+<body>
+    <!-- =========== MENU DESKTOP =========== -->
+    <header class="flex-space">
+        <div class="logo">
+            <a href="" class="a-noAnima">
+                <img src="./svg/logo.svg" alt="" />
+            </a>
+        </div>
+        <div class="bg-glass flex-start-row">
+            <ul class="menu uppercase flex">
+                <li><a href=""><b>00</b> home</a></li>
+                <li><a href=""><b>01</b> destination</a></li>
+                <li><a href=""><b>02</b> crew</a></li>
+                <li><a href=""><b>03</b> technology</a></li>
+            </ul>
+        </div>
+
+        <div class="bx mr-5"></div>
+    </header>
+
+    <!-- =========== MENU MOBILE =========== -->
+    <div class="relative">
+        <div class="menu-mobile">
+            <ul class="nav-mobile uppercase mt-8">
+                <li><a href="" class="link-menu-mobile"><b>00</b> home</a></li>
+                <li><a href="" class="link-menu-mobile"><b>01</b> destination</a></li>
+                <li><a href="" class="link-menu-mobile"><b>02</b> crew</a></li>
+                <li><a href="" class="link-menu-mobile"><b>03</b> technology</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main class="container">
+
+        <!-- MOON -->
+        <div class="row travel" id="moon">
+            <h5 class="uppercase "><span class="mr-3">01</span>Pick your destination</h5>
+
+
+
+            <div class="grid-5 flex-center mt-8">
+                <img src="./img/destination/image-moon.png" class="rotate" alt="" />
+            </div>
+
+            <div class="grid-2 disappear"></div>
+
+            <div class="grid-5 flex-start-column mobile mt-8">
+                <ul class="menu-destination uppercase flex">
+                    <li><a href="" onclick="mostrarConteudo('moon'); return false;">moon</a></li>
+                    <li><a href="" onclick="showContent('mars'); return false;" class="ml-4 menu-destination-item">mars</a></li>
+                    <li><a href="" onclick="showContent('europa'); return false;" class="ml-4 menu-destination-item">europa</a></li>
+                    <li><a href="" onclick="showContent('titan'); return false;" class="ml-4 menu-destination-item">titan</a></li>
+                </ul>
+
+                <h1 class="uppercase mt-5">moon</h1>
+
+                <p class="p1 mt-2 pb-3 bb-new">
+                    See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                </p>
+
+                <div class="flex uppercase mt-5">
+                    <div class="mr-4">
+                        <h6 class="p4 color-primary-normal">avg distance</h6>
+                        <h4 class="mt-1">384,400 km</h4>
+                    </div>
+
+                    <div>
+                        <h6 class="p4 color-primary-normal">Est. travel time</h6>
+                        <h4 class="mt-1 ">3 days</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MARS -->
+        <div class="row travel" id="mars" style="display: none">
+            <h5 class="uppercase "><span class="mr-3">01</span>Pick your destination</h5>
+
+            <div class="grid-5 flex-center mt-8">
+                <img src="./img/destination/image-mars.png" class="rotate" alt="" />
+            </div>
+
+            <div class="grid-2 disappear"></div>
+
+            <div class="grid-5 flex-start-column mobile mt-8">
+                <ul class="menu-destination uppercase flex">
+                    <li><a href="" onclick="mostrarConteudo('moon'); return false;">moon</a></li>
+                    <li><a href="" onclick="showContent('mars'); return false;" class="ml-4 menu-destination-item">mars</a></li>
+                    <li><a href="" onclick="showContent('europa'); return false;" class="ml-4 menu-destination-item">europa</a></li>
+                    <li><a href="" onclick="showContent('titan'); return false;" class="ml-4 menu-destination-item">titan</a></li>
+                </ul>
+
+                <h1 class="uppercase mt-5">mars</h1>
+
+                <p class="p1 mt-2 pb-3 bb-new">
+                    Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
+                </p>
+
+                <div class="flex uppercase mt-5">
+                    <div class="mr-4">
+                        <h6 class="p4 color-primary-normal">avg distance</h6>
+                        <h4 class="mt-1">225 mil. km</h4>
+                    </div>
+
+                    <div>
+                        <h6 class="p4 color-primary-normal">Est. travel time</h6>
+                        <h4 class="mt-1 ">9 months</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EUROPA -->
+        <div class="row travel" id="europa" style="display: none">
+            <h5 class="uppercase "><span class="mr-3">01</span>Pick your destination</h5>
+
+            <div class="grid-5 flex-center mt-8">
+                <img src="./img/destination/image-europa.png" class="rotate" alt="" />
+            </div>
+
+            <div class="grid-2 disappear"></div>
+
+            <div class="grid-5 flex-start-column mobile mt-8">
+                <ul class="menu-destination uppercase flex">
+                    <li><a href="" onclick="mostrarConteudo('moon'); return false;">moon</a></li>
+                    <li><a href="" onclick="showContent('mars'); return false;" class="ml-4 menu-destination-item">mars</a></li>
+                    <li><a href="" onclick="showContent('europa'); return false;" class="ml-4 menu-destination-item">europa</a></li>
+                    <li><a href="" onclick="showContent('titan'); return false;" class="ml-4 menu-destination-item">titan</a></li>
+                </ul>
+
+                <h1 class="uppercase mt-5">europa</h1>
+
+                <p class="p1 mt-2 pb-3 bb-new">
+                    The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+                </p>
+
+                <div class="flex uppercase mt-5">
+                    <div class="mr-4">
+                        <h6 class="p4 color-primary-normal">avg distance</h6>
+                        <h4 class="mt-1">628 mil. km</h4>
+                    </div>
+
+                    <div>
+                        <h6 class="p4 color-primary-normal">Est. travel time</h6>
+                        <h4 class="mt-1 ">3 years</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TITAN -->
+        <div class="row travel" id="titan" style="display: none">
+            <h5 class="uppercase "><span class="mr-3">01</span>Pick your destination</h5>
+
+            <div class="grid-5 flex-center mt-8">
+                <img src="./img/destination/image-titan.png" class="rotate" alt="" />
+            </div>
+
+            <div class="grid-2 disappear"></div>
+
+            <div class="grid-5 flex-start-column mobile mt-8">
+                <ul class="menu-destination uppercase flex">
+                    <li><a href="" onclick="mostrarConteudo('moon'); return false;">moon</a></li>
+                    <li><a href="" onclick="showContent('mars'); return false;" class="ml-4 menu-destination-item">mars</a></li>
+                    <li><a href="" onclick="showContent('europa'); return false;" class="ml-4 menu-destination-item">europa</a></li>
+                    <li><a href="" onclick="showContent('titan'); return false;" class="ml-4 menu-destination-item">titan</a></li>
+                </ul>
+
+                <h1 class="uppercase mt-5">titan</h1>
+
+                <p class="p1 mt-2 pb-3 bb-new">
+                    The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+                </p>
+
+                <div class="flex uppercase mt-5">
+                    <div class="mr-4">
+                        <h6 class="p4 color-primary-normal">avg distance</h6>
+                        <h4 class="mt-1">1.6 bil. km</h4>
+                    </div>
+
+                    <div>
+                        <h6 class="p4 color-primary-normal">Est. travel time</h6>
+                        <h4 class="mt-1 ">7 years</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./js/app.js"></script>
+</body>
+
+</html>

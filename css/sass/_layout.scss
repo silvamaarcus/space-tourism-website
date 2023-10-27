@@ -257,6 +257,11 @@ $gutter: 32px;
 // Bordas
 
 // Borda abaixo do elemento.
+
+.bb-new {
+  border-bottom: 1px solid #383B4B;
+}
+
 .bb-black {
   border-bottom: 1px solid $black-light;
 }
@@ -295,7 +300,6 @@ $gutter: 32px;
   background-color: $black-normal;
 }
 
-
 // Tamanhos para logos
 .logo {
   max-width: 48px;
@@ -320,20 +324,37 @@ $gutter: 32px;
   border: 2px solid $primary-normal;
 }
 
-// Editar
-
-// .card {
-//   border: 1px solid $black-light;
-//   border-radius: 4px;
-//   background-color: rgba(15, 20, 31, 0);
-
-//   transition: 0.2s ease;
-
-//   &:hover {
-//     background-color: rgba(15, 20, 31, 0.2);
-//   }
-// }
-
 .bg-section {
   background-color: rgba(15, 20, 31, 0.5);
+}
+
+// Destination
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../../img/background-home-desktop.jpg");
+  background-size: cover;
+  
+
+  @include responsive(m) {
+    text-align: center;
+    background-image: url("../../img/background-home-tablet.jpg");
+  }
+
+  @include responsive(s) {    
+    text-align: center;
+    background-image: url("../../img/background-home-mobile.jpg");
+  }
+
+  &::-webkit-scrollbar {
+    padding-right: 2px;
+    width: 8px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: $black-light;
+  }
 }

@@ -1,9 +1,9 @@
 // Cores do Projeto
 
 // Cores Principais
-$primary-dark: #0B0D17;
-$primary-normal: #D0D6F9;
-$primary-light: #FFFFFF;
+$primary-dark: #0b0d17;
+$primary-normal: #d0d6f9;
+$primary-light: #ffffff;
 
 // Cores Neutras
 $black-normal: #0f141f;
@@ -39,6 +39,10 @@ $yellow-light: #ffd76b;
 
 .color-white {
   color: $white-normal;
+}
+
+.color-primary-normal {
+  color: $primary-normal;
 }
 
 .color-primary {

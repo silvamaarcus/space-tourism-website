@@ -1,0 +1,36 @@
+.menu-destination {
+  list-style: none;
+
+  a {
+    transition: 0.1s ease; // tempo de transição para efeito hover
+
+    &:hover {
+      padding-bottom: 15px;
+      border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+@include responsive(s) {
+  .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.rotate {
+  /* Defina a origem da rotação no centro do elemento */
+  transform-origin: center;
+  /* Animação de rotação */
+  animation: girar 500s linear infinite alternate;
+}
+/* Defina a animação chamada "girar" */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
