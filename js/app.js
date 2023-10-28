@@ -33,6 +33,4 @@ function showContent(id) {
   document.getElementById(id).style.display = "block";
 }
 
-
-
 showContent("moon");
