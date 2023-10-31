@@ -1,0 +1,39 @@
+// .swiper {
+//   width: 600px;
+//   height: 700px;
+// }
+
+.slide-forced {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+
+  bottom: 120px !important;
+  left: 88px !important; 
+  transform: translate(-50%, -50%) !important;
+
+  width: 232px !important;
+  height: 16px !important;
+
+}
+
+.swiper-pagination-bullet {
+  width: 16px !important; // Largura 
+  height: 16px !important; // Altura
+  margin-right: 24px !important; // espaçamento
+}
+
+
+/* Altera a cor da bolinha */
+.swiper-pagination-bullet {
+  background-color: #FFF !important; 
+}
+

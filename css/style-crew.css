@@ -1730,6 +1730,34 @@ header {
     transform: rotate(360deg);
   }
 }
+.slide-forced {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 120px !important;
+  left: 88px !important;
+  transform: translate(-50%, -50%) !important;
+  width: 232px !important;
+  height: 16px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 24px !important;
+}
+
+/* Altera a cor da bolinha */
+.swiper-pagination-bullet {
+  background-color: #FFF !important;
+}
+
 .icon {
   max-width: 64px;
   transition: 0.5s ease;
