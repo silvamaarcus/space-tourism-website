@@ -26,11 +26,10 @@ link_mobile.forEach((item) => {
 // Função para mostrar o conteúdo desejado
 function showContent(id) {
   let travel_content = document.querySelectorAll(".travel");
-
   travel_content.forEach((content) => {
     content.style.display = "none";
   });
   document.getElementById(id).style.display = "block";
 }
-
+// Executando função para inicar com conteudo 'Moon'.
 showContent("moon");

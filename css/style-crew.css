@@ -1755,9 +1755,44 @@ header {
 
 /* Altera a cor da bolinha */
 .swiper-pagination-bullet {
-  background-color: #FFF !important;
+  background-color: #fff !important;
 }
 
+@media screen and (max-width: 1216px) and (min-width: 620px) {
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 64px;
+  }
+  .slide-forced {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+  .slide-forced img {
+    width: 456px;
+    margin-top: 82px;
+  }
+  .swiper-pagination {
+    top: 500px !important;
+    left: 50% !important;
+    padding: 32px 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  h5 {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 64px;
+  }
+  .slide-forced {
+    grid-template-columns: 1fr;
+  }
+  .swiper-pagination {
+    top: 500px !important;
+    left: 50% !important;
+    padding: 32px 0;
+  }
+}
 .icon {
   max-width: 64px;
   transition: 0.5s ease;
