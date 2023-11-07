@@ -1,0 +1,31 @@
+.pag-1,
+.pag-2,
+.pag-3 {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+
+  text-align: center;
+  line-height: 80px;
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.img-banner {
+  width: 515px;
+  height: 527px;
+}
+
+// .tech-1 {
+//   display: block;
+// }
+
+// .tech-2,
+// .tech-3 {
+//   display: none;
+// }
