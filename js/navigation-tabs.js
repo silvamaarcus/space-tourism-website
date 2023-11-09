@@ -9,7 +9,7 @@ function activeTab(index) {
     page.classList.remove("active");
   });
   tabInfo[index].classList.add("active");
- // Zerando configuração das classes e atribuindo configuração a classe selecionada (Numero da paginação).
+  // Zerando configuração das classes e atribuindo configuração a classe selecionada (Numero da paginação).
   tabNumber.forEach((number) => {
     number.classList.remove("selected");
   });
@@ -27,4 +27,15 @@ if (tabNumber.length && tabInfo.length) {
       activeTab(index);
     });
   });
+}
+
+//Trocando imagem da tecnologia no mobile
+let imgTech = document.querySelectorAll(".js-tabinfo section div img");
+
+function changeImage() {
+  if ( window.innerWidth < 620) {
+    document.getElementById("img-1").src = "../img/technology/image-launch-vehicle-landscape.jpg";
+    document.getElementById("img-2").src = "../img/technology/image-spaceport-landscape.jpg";
+    document.getElementById("img-3").src = "../img/technology/image-space-capsule-landscape.jpg";
+  }
 }

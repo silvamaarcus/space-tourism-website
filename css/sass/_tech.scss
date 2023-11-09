@@ -20,7 +20,6 @@
   cursor: pointer;
 }
 
-
 .img-tech {
   width: 515px;
   height: 527px;
@@ -35,7 +34,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  animation: show .5s forwards;
+  animation: show 0.5s forwards;
 }
 
 @keyframes show {
@@ -51,18 +50,49 @@
 
 .tab.selected {
   background-color: #fff;
-  color: #0B0D17;
+  color: #0b0d17;
 }
 
-// .img-banner {
-//   width: 515px;
-//   height: 527px;
-// }
+@include responsive(s) {
+  .mobile-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-// .content {
-//   display: none;
-// }
+  .tabs {
+    flex-direction: row;
+  }
 
-// .image img {
-//   display: none;
-// }
+  .column section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 32px;
+  }
+
+  // JS ativado
+
+  .js-tabinfo section {
+    display: none;
+  }
+
+  .js-tabinfo section.active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    animation: show 0.5s forwards;
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
